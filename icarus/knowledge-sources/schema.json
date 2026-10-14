@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RADIO Knowledge Record",
+  "description": "Schema for completed works and established knowledge in the RADIO universe.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "name",
+    "summary",
+    "sources"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "work",
+        "character",
+        "species",
+        "location",
+        "vessel",
+        "event",
+        "organization",
+        "technology",
+        "music",
+        "game",
+        "clothing",
+        "concept",
+        "other"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "medium": {
+      "type": "string",
+      "enum": [
+        "story",
+        "poem",
+        "illustration",
+        "song",
+        "recording",
+        "game",
+        "garment",
+        "document",
+        "other"
+      ]
+    },
+    "author": {
+      "type": "string",
+      "description": "Author of the work, when applicable."
+    },
+    "subjects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "relation",
+          "target_id"
+        ],
+        "properties": {
+          "relation": {
+            "type": "string"
+          },
+          "target_id": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Paths or references to completed RADIO works supporting this record."
+    },
+    "established_facts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Facts explicitly established by source works, not speculative interpretations."
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
