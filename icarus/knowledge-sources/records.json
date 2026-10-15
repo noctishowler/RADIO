@@ -1,4 +1,97 @@
+
 {
   "version": 1,
-  "records": []
+  "records": [
+    {
+      "id": "work-a-day-in-the-life-of-a-fungi-farmer",
+      "type": "work",
+      "name": "A Day in the Life of a Fungi Farmer",
+      "medium": "story",
+      "summary": "On Velocia, Takar and Zahra tend bioluminescent fungi in the Ilvani Clan's forest settlement. Their work, their relationship, and the clan's customs unfold beneath the twin suns Enif A and Enif B.",
+      "subjects": [
+        "Takar",
+        "Zahra",
+        "Ilvani Clan",
+        "Velocia",
+        "Saurenai",
+        "Enif A",
+        "Enif B",
+        "fungi farming",
+        "Feathered Sage"
+      ],
+      "sources": [
+        "radio-stories/a-day-in-the-life-of-a-fungi-farmer.md"
+      ],
+      "established_facts": [
+        "The Ilvani Clan lives in a forest settlement on Velocia.",
+        "Takar and Zahra are young Saurenai who tend bioluminescent fungi.",
+        "The fungi provide sustenance and light for the clan.",
+        "Enif A and Enif B illuminate Velocia."
+      ]
+    },
+    {
+      "id": "work-a-world-of-death",
+      "type": "work",
+      "name": "A World of Death",
+      "medium": "story",
+      "summary": "The Saurenai's ancient experiment on Terra, including their introduction of dinosaurs and the devastating asteroid impact, forms part of the history behind their later discovery of intelligent life on the planet.",
+      "subjects": [
+        "Terra",
+        "Saurenai",
+        "Velocia",
+        "dinosaurs",
+        "Sage Zyrath",
+        "Kailen",
+        "Aroth",
+        "Pluma"
+      ],
+      "relationships": [
+        {
+          "relation": "shares events and continuity with",
+          "target_id": "work-echoes-of-stride-star"
+        }
+      ],
+      "sources": [
+        "radio-stories/a-world-of-death.md"
+      ],
+      "established_facts": [
+        "Saurenai scientists seeded Terra with engineered dinosaur life.",
+        "The Saurenai hoped the dinosaurs would eventually develop sentience.",
+        "An asteroid impact devastated Terra.",
+        "Sage Zyrath and Kailen observed the aftermath of the impact."
+      ]
+    },
+    {
+      "id": "work-echoes-of-stride-star",
+      "type": "work",
+      "name": "Echoes of Stride-Star",
+      "medium": "story",
+      "summary": "At a remote Saurenai outpost, Aroth and Pluma detect radio transmissions from Terra, including a shoe advertisement for StrideStar, and prepare to investigate the unexpectedly advanced civilization.",
+      "subjects": [
+        "Aroth",
+        "Pluma",
+        "Saurenai",
+        "Terra",
+        "Velocia",
+        "StrideStar",
+        "radio transmissions"
+      ],
+      "relationships": [
+        {
+          "relation": "shares events and continuity with",
+          "target_id": "work-a-world-of-death"
+        }
+      ],
+      "sources": [
+        "radio-stories/echoes-of-stride-star.md"
+      ],
+      "established_facts": [
+        "Aroth is the lead researcher at a remote Saurenai outpost.",
+        "Pluma works alongside Aroth.",
+        "They detect structured radio transmissions originating from Terra.",
+        "One intercepted transmission advertises StrideStar footwear.",
+        "Aroth and Pluma plan a research mission to Terra."
+      ]
+    }
+  ]
 }
