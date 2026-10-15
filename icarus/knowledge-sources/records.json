@@ -92,6 +92,202 @@
         "One intercepted transmission advertises StrideStar footwear.",
         "Aroth and Pluma plan a research mission to Terra."
       ]
+    },
+    {
+      "id": "character-takar",
+      "type": "character",
+      "name": "Takar",
+      "summary": "A Saurenai introduced as a thoughtful young fungi farmer of the Ilvani Clan on Velocia. A Saurenai named Takar later appears as a bartender at Portside Drift and aboard Captain Rodriguez's ship.",
+      "subjects": [
+        "Saurenai",
+        "Ilvani Clan",
+        "Zahra",
+        "Velocia",
+        "Portside Drift",
+        "Jenna",
+        "Captain Rodriguez"
+      ],
+      "relationships": [
+        {
+          "relation": "appears in",
+          "target_id": "work-a-day-in-the-life-of-a-fungi-farmer"
+        }
+      ],
+      "sources": [
+        "radio-stories/a-day-in-the-life-of-a-fungi-farmer.md",
+        "RADIO Master Doc.pdf, pages 378-399"
+      ],
+      "established_facts": [
+        "Takar works alongside Zahra tending fungi in the Ilvani Clan.",
+        "He is described as contemplative and meticulous in his farming work.",
+        "A Saurenai named Takar works as a bartender at Portside Drift in A Spark Among Stars.",
+        "The later story describes Takar with red and orange feathers, dark scales, and red eyes."
+      ],
+      "notes": [
+        "The apparent connection between the early and later appearances should be tracked without inventing intervening history."
+      ]
+    },
+    {
+      "id": "character-zahra",
+      "type": "character",
+      "name": "Zahra",
+      "summary": "A lively young Saurenai of the Ilvani Clan who tends bioluminescent fungi alongside Takar. She is curious about the world beyond their forest home.",
+      "subjects": [
+        "Saurenai",
+        "Takar",
+        "Ilvani Clan",
+        "Velocia"
+      ],
+      "relationships": [
+        {
+          "relation": "appears in",
+          "target_id": "work-a-day-in-the-life-of-a-fungi-farmer"
+        }
+      ],
+      "sources": [
+        "radio-stories/a-day-in-the-life-of-a-fungi-farmer.md"
+      ],
+      "established_facts": [
+        "Zahra is a young Saurenai of the Ilvani Clan.",
+        "She works alongside Takar tending bioluminescent fungi.",
+        "She has a lively, expressive personality.",
+        "She expresses curiosity about exploring beyond the forest.",
+        "She and Takar share a close personal relationship."
+      ]
+    },
+    {
+      "id": "character-aroth",
+      "type": "character",
+      "name": "Aroth",
+      "summary": "An experienced Saurenai researcher descended from Velocia's bio-engineers. He detects radio transmissions from Terra and investigates them with Pluma.",
+      "subjects": [
+        "Saurenai",
+        "Pluma",
+        "Terra",
+        "Velocia",
+        "High Council"
+      ],
+      "relationships": [
+        {
+          "relation": "appears in",
+          "target_id": "work-a-world-of-death"
+        },
+        {
+          "relation": "appears in",
+          "target_id": "work-echoes-of-stride-star"
+        }
+      ],
+      "sources": [
+        "radio-stories/a-world-of-death.md",
+        "radio-stories/echoes-of-stride-star.md",
+        "RADIO Master Doc.pdf, page 168"
+      ],
+      "established_facts": [
+        "Aroth is a Saurenai researcher with a deep indigo and silver feathered crest.",
+        "He is descended from bio-engineers of Velocia.",
+        "He identifies radio transmissions originating from Terra.",
+        "He conducts research with Pluma.",
+        "The master document later identifies him as Feathered Sage Aroth."
+      ]
+    },
+    {
+      "id": "character-pluma",
+      "type": "character",
+      "name": "Pluma",
+      "summary": "A young Saurenai observer and researcher who works alongside Aroth in investigating the unexpected development of intelligent life on Terra.",
+      "subjects": [
+        "Saurenai",
+        "Aroth",
+        "Terra",
+        "Velocia"
+      ],
+      "relationships": [
+        {
+          "relation": "appears in",
+          "target_id": "work-a-world-of-death"
+        },
+        {
+          "relation": "appears in",
+          "target_id": "work-echoes-of-stride-star"
+        }
+      ],
+      "sources": [
+        "radio-stories/a-world-of-death.md",
+        "radio-stories/echoes-of-stride-star.md",
+        "RADIO Master Doc.pdf, page 168"
+      ],
+      "established_facts": [
+        "Pluma is a Saurenai observer with a vibrant orange feathered crest.",
+        "She is younger than Aroth and works alongside him.",
+        "She helps investigate radio transmissions from Terra.",
+        "She is curious about Terran civilization and its technology.",
+        "The master document later describes her as Aroth's protege."
+      ]
+    },
+    {
+      "id": "location-velocia",
+      "type": "location",
+      "name": "Velocia",
+      "summary": "The homeworld of the Saurenai, illuminated by Enif A and Enif B. Its forests support settlements such as the Ilvani Clan, whose inhabitants use living and bio-engineered materials.",
+      "subjects": [
+        "Saurenai",
+        "Enif A",
+        "Enif B",
+        "Ilvani Clan",
+        "Takar",
+        "Zahra"
+      ],
+      "sources": [
+        "radio-stories/a-day-in-the-life-of-a-fungi-farmer.md",
+        "radio-stories/a-world-of-death.md",
+        "radio-stories/echoes-of-stride-star.md"
+      ],
+      "established_facts": [
+        "Velocia is the Saurenai homeworld.",
+        "Velocia receives light from Enif A and Enif B.",
+        "The Ilvani Clan inhabits a forest settlement on Velocia.",
+        "The Ilvani Clan grows dwellings using living trees and bio-engineered materials.",
+        "Velocia has a history of advanced biological engineering."
+      ]
+    },
+    {
+      "id": "location-terra",
+      "type": "location",
+      "name": "Terra",
+      "aliases": [
+        "Earth"
+      ],
+      "summary": "The planet Earth, known to the Saurenai as Terra. It was the site of their ancient dinosaur experiment, later devastated by an asteroid impact. Intelligent Terran civilization subsequently developed and produced radio transmissions detectable by Saurenai researchers.",
+      "subjects": [
+        "Saurenai",
+        "dinosaurs",
+        "Aroth",
+        "Pluma",
+        "Sage Zyrath",
+        "Kailen"
+      ],
+      "relationships": [
+        {
+          "relation": "featured in",
+          "target_id": "work-a-world-of-death"
+        },
+        {
+          "relation": "featured in",
+          "target_id": "work-echoes-of-stride-star"
+        }
+      ],
+      "sources": [
+        "radio-stories/a-world-of-death.md",
+        "radio-stories/echoes-of-stride-star.md"
+      ],
+      "established_facts": [
+        "The Saurenai conducted an ancient biological experiment on Terra.",
+        "Saurenai scientists introduced engineered dinosaurs to the planet.",
+        "An asteroid impact devastated Terra.",
+        "The Saurenai subsequently regarded Terra as a failed experiment.",
+        "A later Terran civilization developed radio technology.",
+        "Aroth and Pluma detected radio transmissions originating from Terra."
+      ]
     }
   ]
 }
