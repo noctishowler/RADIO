@@ -1,0 +1,35 @@
+name: ICARUS Canon Index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'radio-cannon/**'
+      - 'radio-stories/**'
+      - 'radio-music/**'
+      - 'radio-games/**'
+      - 'radio-clothing/**'
+      - 'icarus/knowledge-sources/records.json'
+      - 'icarus/knowledge-sources/build_index.py'
+      - '.github/workflows/icarus-index.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build ICARUS discovery index
+        run: python icarus/knowledge-sources/build_index.py
+      - name: Upload generated index
+        uses: actions/upload-artifact@v4
+        with:
+          name: icarus-knowledge-index
+          path: icarus/knowledge-sources/index.generated.json
+          retention-days: 30
